@@ -9,6 +9,8 @@
         android:targetSdkVersion="18" />
     
     <uses-permission android:name="cydia.permission.SUBSTRATE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    
     
     
     
