@@ -207,11 +207,11 @@ public class HookList {
 			
 			new HookConfig(true, "IPC", "IPC", "android.content.ContextWrapper", "startService", 
 					new Intro_DUMP_INTENT(), new Class<?>[]{Intent.class}, ""),
-			new HookConfig(false, "IPC", "IPC", "android.content.ContextWrapper", "startActivities", 
+			new HookConfig(true, "IPC", "IPC", "android.content.ContextWrapper", "startActivities", 
 					new Intro_DUMP_INTENT(), new Class<?>[]{Intent[].class}, ""),
 				
 			// Android > 4.1
-			new HookConfig(false, "IPC", "IPC", "android.content.ContextWrapper", "startActivity", 
+			new HookConfig(true, "IPC", "IPC", "android.content.ContextWrapper", "startActivity", 
 					new Intro_DUMP_INTENT(), new Class<?>[]{Intent.class, Bundle.class}, ""),
 
 			new HookConfig(true, "IPC", "IPC", "android.content.ContextWrapper", "startActivity", 
